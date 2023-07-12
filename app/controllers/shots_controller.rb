@@ -65,6 +65,6 @@ class ShotsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def shot_params
-      params.require(:shot).permit(:title, :color)
+      params.require(:shot).permit(:title, :color, :image)
     end
 end
